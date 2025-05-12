@@ -7,7 +7,7 @@ sudo sysctl -p  # 应用系统配置
 
 # 安装expect工具，用于自动化OpenVPN安装
 sudo apt-get update  # 更新软件包列表
-sudo apt-get install expect -y  # 安装expect，自动处理交互式输入
+sudo apt-get install expect curl iproute2 -y  # 安装expect，自动处理交互式输入和其它工具
 
 # 下载并准备OpenVPN一键部署脚本
 curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh  # 下载OpenVPN安装脚本
